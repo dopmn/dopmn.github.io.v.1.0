@@ -1,0 +1,20 @@
+---
+title: About
+layout: default
+---
+<section class="box special">
+	<header class="major">
+		<section class="box special">
+		<h2>About Dopamin</h2>
+		<p>We are a group of enthusiastic workers in our fields of works. With a promise to give our capacity best we always meet our clients’ requirements and keep a target to exceed their expectation. For the sake of improvising the productivity, Dopamine always appreciates challenges and variance in its way of boosting excellence in a task.</p>
+		</section>
+	</header>
+		{% for post in site.posts offset: 0 limit: 10 %}
+			<section class="box special">
+				{{ post.content | remove: '<p>' | remove: '</p>' }}
+			<ul class="actions">
+				<li><a href="https://dopmn.github.io/contact/" class="button alt">Contact Us</a></li>
+			</ul>
+			</section>
+		{% endfor %}
+</section>

@@ -1,0 +1,8 @@
+name: Dopamin
+description: Landing page for Dopamin
+baseurl: ''
+
+url: "http://dopmn.github.io"
+
+paginate: 10
+
